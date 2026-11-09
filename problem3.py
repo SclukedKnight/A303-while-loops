@@ -13,3 +13,17 @@ after the number in the sequence is greater than 100:
 Example:
 1 1 2 3 5 ...
 """
+
+num = {}
+num[0] = 1
+num[1] = 1
+x = 2
+go = True
+while go == True:
+    num[x] = num[x - 1] + num[x - 2]
+    if num[x] > 100:
+        go = False
+    else:
+        print(num[x])
+        print("")
+        x = x + 1

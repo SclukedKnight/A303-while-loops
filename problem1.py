@@ -30,3 +30,19 @@ Enter password: 1234
 Access denied
 Too many failed attempts. Access denied.
 """
+attempts = 3
+tryable = True
+while tryable == True:
+    attempts = attempts - 1
+    if attempts < 0:
+        print("Access Denied, Too many failed attempts")
+        tryable = False
+    else:
+        name = str(input("Please Enter Username: "))
+        pswrd = str(input("Please Enter Password: "))
+
+        if name == "admin" and pswrd == "12345":
+            print("Access Granted")
+            tryable = False
+        else:
+            print(f"Access denied, you have {attempts} many tries left")

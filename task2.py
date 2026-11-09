@@ -29,3 +29,13 @@ Access granted
 
 
 """
+match = False
+while not match == True:
+    name = str(input("Enter Username: "))
+    pswrd = str(input("Please enter pswrd: "))
+
+    if name == "admin" and pswrd == "12345":
+        print("access granted")
+        match = True
+    else:
+        print("Access Denied")

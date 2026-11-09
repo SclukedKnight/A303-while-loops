@@ -17,3 +17,9 @@ example:
 Enter a number: 4
 4 8 12 16 20 24 28 32 36 40 44 48
 """
+
+x = float(input("Enter Number: "))
+y = 0
+while y < 10:
+    y = y + 1
+    print(x * y, end=' ')
